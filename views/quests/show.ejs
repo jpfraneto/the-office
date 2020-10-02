@@ -1,0 +1,25 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="caption-full">
+                    <h3>Name:</h3>
+                    <p><%=quest.name%></p>
+                    <h3>Description:</h3>
+                    <p><%= quest.description %></p>
+                    <h3>Date:</h3>
+                    <p><%= quest.date %></p>
+                    <h3>How did I come up with this quest? Why is it important?:</h3>
+                    <p><%= quest.how %></p>
+                    <h3>What function does it add to the platform? Why is it important?:</h3>
+                    <p><%= quest.functionality %> </p>
+                </div>
+            </div>
+            <a class="btn btn-primary" href="/quests">Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer") %>

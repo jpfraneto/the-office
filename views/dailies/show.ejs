@@ -1,0 +1,26 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="caption-full">
+                    <h3>Index:</h3>
+                    <p><%=dailie.index%></p>
+                    <h3>Date:</h3>
+                    <p><%= dailie.date %></p>
+                    <h3>git commit:</h3>
+                    <p><%= dailie.gitcommit %></p>
+                    <h3>Description:</h3>
+                    <p><%= dailie.description %></p>
+                    <h3>Feeling:</h3>
+                    <p><%= dailie.feeling %></p>
+                </div>
+            </div>
+            <a class="btn btn-success" href="/dailies/<%=dailie.index -1 %>">Previous</a>
+            <a class="btn btn-danger" href="/dailies">Back</a>
+            <a class="btn btn-success" href="/dailies/<%=dailie.index +1 %>">Next</a>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %>

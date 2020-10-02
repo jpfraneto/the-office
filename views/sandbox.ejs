@@ -1,0 +1,35 @@
+<%- include("./partials/header") %>
+
+<div class="container text-center">
+        <h1>WENA COMPARE! A VER SI FUNCIONA LA COSA:</h1> 
+          <button onclick="addElementToUl()">Add Element to UL</button>
+          <button onclick="recursiveAdding()">Recursive Adding</button>
+          <button onclick="updateLine()">Update the H1!</button>
+          <button onclick="reloadPage()">Reload the webpage</button>
+          <ul id="unorderedList">
+            <% animals.forEach(animal => { %>
+                <li><%= animal.name %></li>
+            <% }); %>
+          </ul>
+        <h1 id="h1Display">The random animal is: <span id="randomAnimalName"><%=magicalAnimal.name %></span> and the random number: <span id="randomNumber"><%= randomNumber %></span></h1>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align:center">Create a New Animal</h1>
+        <div style="width: 30%; margin: 25px auto;">
+       <form action="/sandbox" method="POST">
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Animal Name" name="name">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+            </div>  
+        </form>
+        </div>
+    </div>
+</div>
+
+<%- include("./partials/footer") %>

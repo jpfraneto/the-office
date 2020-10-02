@@ -1,0 +1,36 @@
+<%- include("../partials/header") %>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align:center">Create a New Feedback</h1>
+        <div style="width: 30%; margin: 25px auto;">
+       <form action="/feedback" method="POST">
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="name" name="name">
+            </div>
+            
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="date [DAY YEAR MONTH | 10 2020 VII]" name="date">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="feedback" name="feedback">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="email [for private use, I'll thank you through email." name="email">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="URL to a music recommendation (if you want)" name="recommendation">
+            </div>
+            
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+            </div>  
+        </form>
+            <a href="/feedback" style="text-align: center;"> Go Back</a>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %>

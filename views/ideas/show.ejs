@@ -1,0 +1,28 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="caption-full">
+                    <h3>Name:</h3>
+                    <p><%=idea.name%></p>
+                    <h3>Date:</h3>
+                    <p><%= idea.date %></p>
+                    <h3>Description:</h3>
+                    <p><%= idea.description %></p>
+                    <h3>Why is it a good idea?:</h3>
+                    <p><%= idea.why %></p>
+                    <h3>Who does it help?:</h3>
+                    <p><%= idea.who %></p>
+                    <h3>How valuable is it? From 8 to 99:</h3>
+                    <p><%= idea.value %></p>
+                    <h3>Who added it?</h3>
+                    <p><%= idea.addedBy %></p>
+                </div>
+            </div>
+            <a class="btn btn-primary" href="/ideas">Back</a>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %>

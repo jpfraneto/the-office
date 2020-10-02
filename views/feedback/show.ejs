@@ -1,0 +1,22 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="caption-full">
+                    <h3>Name:</h3>
+                    <p><%=feedback.name%></p>
+                    <h3>Date:</h3>
+                    <p><%= feedback.date %></p>
+                    <h3>Feedback:</h3>
+                    <p><%= feedback.feedback %></p>
+                    <h3>Recommendation:</h3>
+                    <p><%= feedback.recommendation %></p>
+                </div>
+            </div>
+            <a class="btn btn-primary" href="/feedback">Back</a>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %>

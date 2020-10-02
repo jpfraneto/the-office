@@ -1,0 +1,25 @@
+<%- include("../partials/header") %>
+<div class="container text-center">
+    <h1>Dailies</h1>
+    <p>This is the place where I will post my dailies. Every day I will write down what did I work on that day, what is in my mind related to my work, and where I'm heading with it.</p>
+    <hr>
+    <div class="row dailiesRow">
+        <% dailies.forEach(function(dailie){ %>
+            <div class="col-md-1 col-sm-3 text-center">
+                    <div class="caption">
+                        <a class="dailieIndex" href="/dailies/<%= dailie.index%>"><strong><%=dailie.index %></strong></a>
+                    </div>
+                    <div class="caption">
+                        <h6><%=dailie.date %></h6>
+                    </div>
+            </div>
+        <% }); %>
+    </div> 
+<div class="text-center">
+        <a class="btn btn-primary" href="/">Back to <strong>The Office</strong></a>
+        <a class="btn btn-success" href="/dailies/new">Add new Dailie</a>
+</div>
+</div>
+
+
+<%- include("../partials/footer") %>

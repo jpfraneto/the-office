@@ -1,0 +1,40 @@
+<%- include("../partials/header") %>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align:center">Create a New Quest</h1>
+        <div style="width: 30%; margin: 25px auto;">
+       <form action="/quests" method="POST">
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="name of quest" name="name">
+            </div>
+     
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="description" name="description">
+            </div>
+            
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="date [DAY YEAR MONTH | 10 2020 VII]" name="date">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="How did I came up with this quest? Why is it important?" name="how">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="What functionality does it add to the platform? Why is it important?" name="functionality">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="password" name="password">
+            </div>
+            
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+            </div>  
+        </form>
+            <a href="/quests" style="text-align: center;"> Go Back</a>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %>

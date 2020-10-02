@@ -1,0 +1,72 @@
+body, html {
+    height: 100%
+}
+
+.bg {
+    background-image: url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1040&q=80");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid black;
+}
+
+h1 {
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+
+.anchorTag {
+    font-size: 3em;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.618em;
+    text-shadow: 2px 2px 2px #aaa;
+    color: white;
+}
+
+address {
+    display: block;
+    font-style: italic;
+  }
+
+.textReader {
+    background-color: black;
+    margin-bottom: 8px;
+    height: 88%;
+    padding: 3px 3px;
+}
+
+.dailieButton {
+    padding: 6px 0px;
+    margin: 0 auto;
+}
+
+.textReader p {
+    font-family: Helvetica;
+    color: white;
+    text-align: justify;
+}
+
+.intro {
+    font-style: italic;
+    color: peachpuff;
+}
+
+.dailiesRow {
+    margin-bottom: 0px 0px 0px 5px;
+}
+
+.dailieIndex{
+    color: black;
+    font-size: 1.2 em;
+}
+
+.animalImage{
+    width: 100px;
+    height: auto;
+}
